@@ -1,0 +1,19 @@
+{
+  "name": "webaligner-example",
+  "version": "0.0.0",
+  "authors": [
+    "Chris Baume <chrisbaume@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "webaligner": "latest"
+  }
+}

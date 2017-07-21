@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BBCRD | Education | Ethics of personal data in the era of QS and IoT</title>
+  <link rel="stylesheet" href="css/hyperaudio-lite-player.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.js"></script>
+  <script src="https://platform.twitter.com/widgets.js"></script>
+</head>
+<body>
+
+  <p>
+    <input type="file" id="fileInput"><br />
+    <label for="start">Start time:</label>
+    <input type="text" name="start" id="start"><br />
+    <label for="end">End time:</label>
+    <input type="text" name="end" id="end"><br />
+    <label for="text">Text:</label>
+    <input type="text" name="text" id="text"><br />
+    <label for="check">Weight by word length:</label>
+    <input type="checkbox" name="check" id="check"><br />
+    <input type="submit" id="submit">
+  </p>
+<!--
+  <p>
+    <form id="searchForm" style="float:right">
+      Playback Rate <span id="currentPbr">1</span><input id="pbr" type="range" value="1" min="0.5" max="3" step="0.1" style="width:10%">
+      <input id="search" type="text" ><input type="submit" value="search">
+    </form>
+  </p>
+-->
+  <video id="hyperplayer" style="z-index: 5000000; position:relative; width:400px" controls></video>
+
+  <div id="hypertranscript" style="overflow-y:scroll; height:600px; position:relative; border-style:dashed; border-width: 1px; border-color:#999; padding: 8px">
+  </div>
+
+  <script src="js/hyperaudio-lite.js"></script>
+  <script src="js/hyperaudio-lite-wrapper.js"></script>
+  <script src="bower_components/webaligner/webaligner.js"></script>
+  <script src="interface.js"></script>
+
+  <!-- Uncomment the following script if you require IE versions less than 10 to be supported or Opera Mini http://caniuse.com/#search=classlist ¯\_(ツ)_/¯ -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script> -->
+</body>
+</html>
